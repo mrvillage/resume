@@ -1,0 +1,33 @@
+\newcommand{\employer}[5]{%
+\entry*
+	\textbf{#1} \hfill \textbf{#2 - #3}
+	\newline
+	\textit{#4}
+	\begin{itemize}
+	\setlength\parskip{-4pt}
+	\vspace{-5pt}
+		#5
+	\end{itemize}
+}
+
+\newcommand{\link}[1]{\textcolor{MarkerColor}{\underline{#1}}}
+
+
+\begin{rubric}{Employment History}
+\employer{Student Researcher (CRLB-GMEL)}{May 2021}{Present}{Population Health Research Institute, McMaster University.}{
+	\item Optimized pipelines with improvements ranging from 2x, 20x, to even 64x in some cases.
+	\item Created the \href{https://github.com/GMELab/lmutils.r}{\link{\texttt{lmutils}}} library for R to enable more efficient high-performance computing on biobank-scale data thanks to the power and flexibility of the Rust programming language.
+}
+\employer{Software Developer (Contract)}{July 2024}{Present}{Baseline Technologies (Remote)}{
+	\item Modernized backend and implemented new backend modules such as an updated permissions system and license management.
+	\item Created new PDF system with improved performance, flexibility, and styling.
+}
+\employer{Software Developer (Politics \& War)}{Mar 2022}{June 2024}{Yellowstone Digital Media (Remote)}{
+	\item Worked to improve and incrementally require legacy PHP codebase with new features such as a WebSocket-based real-time API for a playerbase of more than 6,000.
+	\item Worked as lead game developer coordinating and managing teams of community volunteers including the Development, API, Game Design, and Quality Assurance teams.
+}
+\employer{Senior Karate Instructor and Software Developer}{Sept 2020}{Present}{Canadian Black Belt Academy}{
+	\item Principle software developer for the academy's all-on-one membership management system. Includes attendance, billing, belt tracking, and more.
+	\item Planned and delivered karate classes of up to 35 students from ages 4 to adult. Coordinated and managed junior instructors and interfaced with parents in regards to registration, retail, and the progress of their children.
+}
+\end{rubric}
